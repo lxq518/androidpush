@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+ <com.baidu.push.example.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <include layout="@layout/layout_menu" />
+    <RelativeLayout     
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="@drawable/chat_bg_01">
+       <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/chat_title"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/ivTitleName"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:singleLine="true"
+            android:textSize="24sp" 
+            android:text="信息" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="42.0dip"
+            android:layout_height="34.0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_bottombar_btn_selector"
+            android:enabled="true"
+            android:shadowColor="#ff568ab5"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:text="返回"
+            android:textColor="@drawable/send_btn_textcolor"
+            android:textSize="14.0sp" />
+
+    </RelativeLayout>
+       <TextView 
+        android:id="@+id/table"
+        android:layout_below="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"/>
+       <ListView
+		    android:id="@+id/list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_below="@+id/table"
+		    android:layout_above="@+id/inputBar"/>
+       <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottombar_bg"
+        android:gravity="center_vertical" >
+
+
+        <TextView
+            android:id="@+id/face_btn"
+            android:layout_width="42.0dip"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            />
+
+        <EditText
+            android:id="@+id/msg_et"
+            android:layout_width="0.0dip"
+            android:layout_height="40dip"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/chat_bottombar_input"
+            android:textCursorDrawable="@null"
+            android:inputType="textMultiLine"
+            android:maxHeight="68.0dip"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000000"
+            android:paddingRight="14.0dip"
+            android:paddingTop="4.0dip"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/send_layout"
+            android:layout_width="56.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="42.0dip"
+                android:layout_height="34.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:background="@drawable/chat_bottombar_btn_selector"
+                android:enabled="true"
+                android:shadowColor="#ff568ab5"
+                android:shadowDx="0.0"
+                android:shadowDy="-1.0"
+                android:shadowRadius="0.2"
+                android:text="发送"
+                android:textColor="@drawable/send_btn_textcolor"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>  
+</com.baidu.push.example.SlideMenu>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:layout_marginRight="20dip"
+  android:layout_marginLeft="20dip"
+  >
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">    
+         <TextView
+             android:id="@+id/messagedetail_row_date"
+             android:focusable="false"
+			 android:focusableInTouchMode="false"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textColor="#969696"
+             android:paddingTop="2dp"
+             />
+          <TextView
+              android:id="@+id/user_name"
+              android:focusable="false"
+			  android:focusableInTouchMode="false"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+              android:paddingTop="2dp"
+              android:textSize="16sp"/>
+      <TextView
+          android:id="@+id/messagedetail_row_text"
+          android:focusable="false"
+		  android:focusableInTouchMode="false"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="2dp"
+          android:textColor="#0000DD"
+          android:textSize="16sp"
+      />
+  </LinearLayout>
+<TableRow 
+      android:layout_width="fill_parent"
+      android:layout_height="10dip"
+    ></TableRow>
+  
+</LinearLayout>
